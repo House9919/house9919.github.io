@@ -112,11 +112,6 @@ body {
     transition: opacity 2s;
 }
 
-#popup-msg.fade-in {
-    display: block;
-    opacity: 1;
-}
-
 /* Animations */
 
 @keyframes dropAnimation {
