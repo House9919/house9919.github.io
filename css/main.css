@@ -81,6 +81,42 @@ body {
     background-color: #33c117;
 }
 
+/* IDs */
+#popup-msg {
+    opacity: 0;
+    display: none;
+
+    /* Position */
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* I dont know how to name this part */
+    width: 400px;
+    max-height: 50px;
+    padding: 10px;
+
+    /* Text */
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; /* No underline and color when visited site */
+    
+    /* Background */
+    border-radius: 20px;
+    background-color: #d42020;
+    
+    /* Transition */
+    transition: opacity 2s;
+}
+
+#popup-msg.fade-in {
+    display: block;
+    opacity: 1;
+}
+
 /* Animations */
 
 @keyframes dropAnimation {

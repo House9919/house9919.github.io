@@ -6,24 +6,31 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/popup.js"></script>
     </head>
 
     <body>
         <div class="cont">
             <p class="hd">Together We Survive</p>
         
-            <!-- Szerverhez irányító gombok -->
+            <!-- Buttons for the specific servers -->
             <div class="btn-cont">
                 <a href="pages/form.html" class="rnd-btn">TWS - Pixelmon</a><br>
-                <a href="#" class="rnd-btn">TWS - Tales of Lynnear</a><br>
+                <a href="#" class="rnd-btn" id="popup-link">TWS - Tales of Lynnear</a><br> <!-- Needs implementation -->
             </div>
         </div>
 
-        <!-- Kép gombok -->
+        <!-- Image buttons | Not yet implemented -->
         <div class="img-cont">
             <img src="pics/youtube.png" width="64" height="64">
             <img src="pics/facebook.png" width="64" height="64">
             <img src="pics/discord.png" width="64" height="64">
+        </div>
+
+        <!-- Popup message -->
+        <div id="popup-msg">
+            <p>This site is not yet available!</p>
         </div>
     </body>
 </html>
