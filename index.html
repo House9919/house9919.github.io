@@ -1,3 +1,11 @@
+<!--
+TODO:
+    -Háttérkép legyen valami blokkos animáció.
+    -Amikor ráviszed a gombra az egeret, akkor változzon a háttérkép az adott szerver lobbyjának képére.
+    -Képes gombokat működésre bírni.
+    -Discord legyen kék
+    -FB legyen kisebb
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,16 +16,23 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/popup.js"></script>
+        <script src="js/hover.js"></script>
     </head>
 
     <body>
+        <!-- Background -->
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+        <!-- Main Page -->
         <div class="cont">
             <p class="hd">Together We Survive</p>
         
             <!-- Buttons for the specific servers -->
             <div class="btn-cont">
-                <a href="pages/form.html" class="rnd-btn">TWS - Pixelmon</a><br>
-                <a href="#" class="rnd-btn" id="popup-link">TWS - Tales of Lynnear</a><br> <!-- Needs implementation -->
+                <a href="pixelmon/index.html" class="rnd-btn hoverPIX">TWS - Pixelmon</a><br>
+                <a href="#" class="rnd-btn hoverTOL" id="popup-link">TWS - Tales of Lynnear</a><br> <!-- Needs implementation -->
             </div>
         </div>
 
