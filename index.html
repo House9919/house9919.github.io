@@ -1,10 +1,7 @@
 <!--
 TODO:
     -Háttérkép legyen valami blokkos animáció.
-    -Amikor ráviszed a gombra az egeret, akkor változzon a háttérkép az adott szerver lobbyjának képére.
     -Képes gombokat működésre bírni.
-    -Discord legyen kék
-    -FB legyen kisebb
 -->
 <!DOCTYPE html>
 <html>
@@ -20,7 +17,7 @@ TODO:
     </head>
 
     <body>
-        <!-- Background -->
+        <!-- Background waves-->
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
@@ -32,20 +29,39 @@ TODO:
             <!-- Buttons for the specific servers -->
             <div class="btn-cont">
                 <a href="pixelmon/index.html" class="rnd-btn hoverPIX">TWS - Pixelmon</a><br>
-                <a href="#" class="rnd-btn hoverTOL" id="popup-link">TWS - Tales of Lynnear</a><br> <!-- Needs implementation -->
+                <a href="#" class="rnd-btn hoverTOL sound-button" id="popup-link">TWS - Tales of Lynnear</a><br> <!-- Needs implementation -->
             </div>
         </div>
 
+        <div class="background"></div>
+
         <!-- Image buttons | Not yet implemented -->
         <div class="img-cont">
-            <img src="pics/youtube.png" width="64" height="64">
-            <img src="pics/facebook.png" width="64" height="64">
-            <img src="pics/discord.png" width="64" height="64">
+
+            <!-- Youtube -->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img src="pics/youtube.png" width="64" height="64">
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100066697234733" target="_blank">
+                <img src="pics/facebook.png" width="48" height="48">
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discord.gg/z2TWQ66FGy" target="_blank">
+                <img src="pics/discord.png" width="64" height="64">
+            </a>
         </div>
 
         <!-- Popup message -->
         <div id="popup-msg">
             <p>This site is not yet available!</p>
         </div>
+
+        <!-- Sounds -->
+        <audio id="sound">
+            <source src="audio/notification.mp3" type="audio/mpeg">
+        </audio>
     </body>
 </html>

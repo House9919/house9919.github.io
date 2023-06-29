@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
                 popupMessage.style.display = 'none';
             }, 1500);
-        }, 5000);
+        }, 2500);
+    });
+
+    // Audio
+    var soundButton = document.querySelector('.sound-button');
+    var sound = document.querySelector('#sound');
+
+    soundButton.addEventListener('click', function() {
+        sound.play();
     });
 });
