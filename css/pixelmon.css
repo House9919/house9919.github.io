@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
+/* Elements */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,8 +27,7 @@ footer {
     padding: 30px 10%;
     background-color: black;
 
-    position: fixed;
-    bottom: 0;
+    display: table-footer-group;
     width: 100%;
 }
 
@@ -42,6 +43,8 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
+
+/* Classes */
 
 .text {
     font-family: Roboto;
