@@ -8,20 +8,31 @@
         <link rel="stylesheet" href="../css/pixelmon.css">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="../css/cards.css">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../js/navbar.js"></script>
     </head>
 
     <body>
         <!-- Navigációs sáv -->
         <header>
-            <p class="text">Together We Survive - Pixelmon</p>
+            <div class="nameLong">
+                <p class="text">Together We Survive - Pixelmon</p>
+            </div>
+            <div class="nameShort">
+                <p class="text">TWS - Pixelmon</p>
+            </div>
             <nav>
-                <ul class="text navbar">
-                    <li>Home</li>
-                    <li>Help</li>
-                    <li>FAQ</li>
-                    <li>About</li>
-                    <li>Contacts</li>
-                </ul>
+                <div class="text navbar" id="navBarID">
+                    <a href="../index.html" class="active">Home</a>
+                    <a href="#">Help</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About</a>
+                    <a href="#">Contacts</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </div>
             </nav>
         </header>
 
@@ -34,6 +45,7 @@
                     <div class="card-content">
                         <h2>Card Title1</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -43,6 +55,7 @@
                     <div class="card-content">
                         <h2>Card Title2</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -52,6 +65,7 @@
                     <div class="card-content">
                         <h2>Card Title3</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -61,6 +75,7 @@
                     <div class="card-content">
                         <h2>Card Title4</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -70,6 +85,7 @@
                     <div class="card-content">
                         <h2>Card Title5</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -79,6 +95,7 @@
                     <div class="card-content">
                         <h2>Card Title6</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -88,6 +105,7 @@
                     <div class="card-content">
                         <h2>Card Title7</h2>
                         <p class="cardtext">Card description goes here.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -97,6 +115,7 @@
                     <div class="card-content">
                         <h2>Server has opened</h2>
                         <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -106,6 +125,7 @@
                     <div class="card-content">
                         <h2>Server has opened</h2>
                         <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -115,6 +135,7 @@
                     <div class="card-content">
                         <h2>Server has opened</h2>
                         <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -124,6 +145,7 @@
                     <div class="card-content">
                         <h2>Server has opened</h2>
                         <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -133,6 +155,7 @@
                     <div class="card-content">
                         <h2>Server has opened</h2>
                         <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
 
@@ -141,9 +164,11 @@
                     <img src="../pics/posts/Banner.gif" alt="Card Image" class="cardtext">
                     <div class="card-content">
                         <h2>Server has opened</h2>
-                        <p class="cardtext">The server has opened. Click on this card to get more information.</p>
+                        <p class="cardtext">The server has opened. Click on this card to get more information. </p>
+                        <p class="datetext">29 Jun 2023</p>
                     </div>
                 </a>
+
             </div>
         </main>
 
@@ -209,11 +234,11 @@
 
             <nav>
                 <ul class="text footer-nav">
-                    <li>Home</li>
-                    <li>Help</li>
-                    <li>FAQ</li>
-                    <li>About</li>
-                    <li>Contacts</li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
         </footer>
